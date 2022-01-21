@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Timer</title> 
+        <link rel="stylesheet" href="bg.css" >
+       </head>
+       <body >
+            <header>
+                <div class="container">
+            <img id="bgimg" src='bg1.PNG' alt="background image"/>
+                </div>
+        <div class="text-block">
+            
+            <h1 id="countdown" >10</h1>
+          
+        </div>
+    </header>
+        
+       </body>
+
+       <script>
+           var x=document.getElementById('countdown');
+           var strt =x.innerHTML;
+           var bg=document.getElementById('bgimg');
+           setInterval(function(){
+               strt= strt>0?strt-1:0;
+               x.innerHTML=strt;
+               var bgpth=strt%2==0?'bg1.PNG':'bg2.PNG';
+               bg.src=bgpth;
+            },1000);
+       </script>                                          
+</html>

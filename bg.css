@@ -1,0 +1,17 @@
+#fis{
+    background-image:repeating-linear-gradient(to bottom right, rgb(230, 64, 64),rgb(171, 226, 240),rgb(210, 228, 47)) ;               
+   
+}
+ #sec{
+    background-image:linear-gradient(125deg,rgb(0, 119, 255), pink,rgb(255, 196, 0)); 
+    
+}
+.container{
+  position : relative;
+}
+.text-block{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+
+}
